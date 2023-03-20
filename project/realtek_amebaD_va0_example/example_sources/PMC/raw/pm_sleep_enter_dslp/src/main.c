@@ -216,8 +216,8 @@ u32 test_suspend(void)
 		DiagPrintf("enter dslp\r\n");
 
 		/* if want to wake up from dslp, uncomment following two lines */ 
-		//SOCPS_AONTimer(10000);
-		//SOCPS_AONTimerCmd(ENABLE);
+		SOCPS_AONTimer(5000);
+		SOCPS_AONTimerCmd(ENABLE);
 
 		SOCPS_DeepSleep_RAM();
 	}
