@@ -212,7 +212,7 @@ u32 test_suspend(void)
 {
 	u32 time = pmu_get_km4sleeptime(); /* unit ms */
 
-	if (time > 0x10000) {
+	if (time > 0x5000) {
 		DiagPrintf("enter dslp\r\n");
 
 		/* if want to wake up from dslp, uncomment following two lines */ 
